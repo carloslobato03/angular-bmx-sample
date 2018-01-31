@@ -1,5 +1,5 @@
 {
-  "name": "carlos",
+  "name": "angular-sample",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -8,10 +8,13 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "dist": "ng build && cp src/static/manifest.yml src/static/Staticfile src/static/nginx.conf dist",
+    "push": "npm run dist && cd dist && cf push"
   },
   "private": true,
   "dependencies": {
+    "@angular-devkit/core": "0.0.29",
     "@angular/animations": "^5.0.0",
     "@angular/common": "^5.0.0",
     "@angular/compiler": "^5.0.0",
