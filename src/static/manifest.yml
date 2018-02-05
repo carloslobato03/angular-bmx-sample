@@ -1,5 +1,5 @@
 applications:
-- name: angular-bmx-sample
-  host: angular-bmx-sample
+- name: angular-bmx-sample-pipeline
+  host: angular-bmx-sample-pipeline
   memory: 64M
   buildpack: staticfile_buildpack
